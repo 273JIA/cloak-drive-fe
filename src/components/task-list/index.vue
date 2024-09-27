@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-popover
-            title="上传任务列表"
+            title="Upload task list"
             placement="bottom-end"
             width="600"
             trigger="click"
@@ -25,7 +25,7 @@
                     <el-table-column
                         align="center"
                         header-align="center"
-                        label="文件状态"
+                        label="File Status"
                         width="120">
                         <template #default="scope">
                             <el-popover trigger="hover" placement="top">
@@ -52,7 +52,7 @@
                     <el-table-column
                         align="center"
                         header-align="center"
-                        label="上传进度"
+                        label="Upload progress"
                         width="180">
                         <template #default="scope">
                             <el-popover trigger="hover" placement="top" width="300">
@@ -71,7 +71,7 @@
                     <el-table-column
                         align="center"
                         header-align="center"
-                        label="操作"
+                        label="Action"
                         width="180">
                         <template #default="scope">
                             <el-space :size="3">

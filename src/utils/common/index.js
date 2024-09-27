@@ -132,7 +132,7 @@ let panUtil = {
         return this.getUrlPrefix() + '/file/preview?fileId=' + this.handleId(fileId) + '&authorization=' + getToken()
     },
     getUrlPrefix() {
-        return 'http://cloakdrive.online/api/'
+        return 'https://cloakdrive.online/api/'
         //return 'http://127.0.0.1:8082'
     },
     getChunkSize() {

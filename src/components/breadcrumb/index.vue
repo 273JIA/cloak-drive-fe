@@ -9,7 +9,6 @@
         <el-breadcrumb separator-icon="ArrowRight" style="display: inline-block;">
             <el-breadcrumb-item v-for="(item, index) in breadCrumbs" :key="index">
                 <a class="breadcrumb-item-a" @click="goToThis(item.id)" href="#">{{ item.name }}</a>
-<!--              <a class="breadcrumb-item-a" @click="goToThis(item.id)" href="#">All Files</a>-->
             </el-breadcrumb-item>
         </el-breadcrumb>
     </div>
