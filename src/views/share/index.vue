@@ -3,7 +3,7 @@
         <div class="pan-share-header-content">
             <div class="pan-share-header-content-wrapper">
                 <div class="pan-share-header-title-font-content">
-                    <span class="pan-share-header-title-font" @click="goHome">R Pan</span>
+                    <span class="pan-share-header-title-font" @click="goHome">CloakDrive</span>
                 </div>
                 <div v-if="loginFlag" class="pan-share-header-user-info-content">
                     <el-link :underline=false type="success" class="pan-share-username">
