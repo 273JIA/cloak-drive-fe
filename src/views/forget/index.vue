@@ -3,9 +3,9 @@
         <div class="steps-content">
             <el-steps :active="currentStep" direction="vertical" finish-status="success"
                       :process-status="processStatus">
-                <el-step title="校验用户名"></el-step>
-                <el-step title="校验密保答案"></el-step>
-                <el-step title="修改密码"></el-step>
+                <el-step title="Verify user name"></el-step>
+                <el-step title="Verify Answer"></el-step>
+                <el-step title="Change password"></el-step>
             </el-steps>
         </div>
         <div class="form" v-if="currentStep === 1">

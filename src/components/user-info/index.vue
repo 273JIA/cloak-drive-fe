@@ -13,7 +13,7 @@
             </template>
         </el-dropdown>
         <el-dialog
-            title="修改密码"
+            title="Change Password"
             v-model="changePasswordDialogVisible"
             @opened="focusPasswordInput"
             @closed="resetChangePasswordForm"
@@ -26,20 +26,20 @@
                          :model="changePasswordForm"
                          status-icon
                          @submit.native.prevent>
-                    <el-form-item label="旧密码" prop="password">
+                    <el-form-item label="Old Password" prop="password">
                         <el-input type="password"
                                   show-password
                                   ref="passwordEl"
                                   @keyup.enter.native="doChangePassword"
                                   v-model="changePasswordForm.password" autocomplete="off"/>
                     </el-form-item>
-                    <el-form-item label="新密码" prop="newPassword">
+                    <el-form-item label="New Password" prop="newPassword">
                         <el-input type="password"
                                   show-password
                                   @keyup.enter.native="doChangePassword"
                                   v-model="changePasswordForm.newPassword" autocomplete="off"/>
                     </el-form-item>
-                    <el-form-item label="确认密码" prop="reNewPassword">
+                    <el-form-item label="Confirmation Password" prop="reNewPassword">
                         <el-input type="password"
                                   show-password
                                   @keyup.enter.native="doChangePassword"
