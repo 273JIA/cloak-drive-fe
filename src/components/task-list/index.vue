@@ -76,7 +76,7 @@
                         <template #default="scope">
                             <el-space :size="3">
                                 <el-tooltip class="item"
-                                            effect="light" content="暂停上传" placement="top">
+                                            effect="light" content="Pause" placement="top">
                                         <span>
                                             <el-button v-show="scope.row.status === fileStatus.UPLOADING.code"
                                                        @click="pause(scope.row.filename)" size="small" type="primary"
@@ -84,7 +84,7 @@
                                         </span>
                                 </el-tooltip>
                                 <el-tooltip class="item"
-                                            effect="light" content="继续上传" placement="top">
+                                            effect="light" content="Resume" placement="top">
                                         <span>
                                             <el-button v-show="scope.row.status === fileStatus.PAUSE.code"
                                                        @click="resume(scope.row.filename)" size="small" type="success"
@@ -92,7 +92,7 @@
                                         </span>
                                 </el-tooltip>
                                 <el-tooltip class="item"
-                                            effect="light" content="取消上传" placement="top">
+                                            effect="light" content="Cancel" placement="top">
                                         <span>
                                             <el-button
                                                 v-show="scope.row.status === fileStatus.UPLOADING.code || scope.row.status === fileStatus.WAITING.code || scope.row.status === fileStatus.PAUSE.code || scope.row.status === fileStatus.FAIL.code"
@@ -101,7 +101,7 @@
                                         </span>
                                 </el-tooltip>
                                 <el-tooltip class="item"
-                                            effect="light" content="重新上传" placement="top">
+                                            effect="light" content="Retry" placement="top">
                                         <span>
                                             <el-button v-show="scope.row.status === fileStatus.FAIL.code"
                                                        @click="retry(scope.row.filename)" size="small" type="warning"
