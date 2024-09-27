@@ -25,11 +25,11 @@
                     <input type="password" v-model="registerForm.rePassword" @keyup.enter="doRegister"/>
                 </label>
                 <label>
-                    <span>Security Questions</span>
+                    <span>Security Question</span>
                     <input type="text" v-model="registerForm.question" @keyup.enter="doRegister"/>
                 </label>
                 <label>
-                    <span>Password Answers</span>
+                    <span>Security Answer</span>
                     <input type="text" v-model="registerForm.answer" @keyup.enter="doRegister"/>
                 </label>
                 <el-button type="warning" class="submit" :loading="loading" @click="doRegister" round>Register</el-button>

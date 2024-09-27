@@ -26,20 +26,20 @@
                          :model="changePasswordForm"
                          status-icon
                          @submit.native.prevent>
-                    <el-form-item label="Old Password" prop="password">
+                    <el-form-item label="OldPassword" prop="password">
                         <el-input type="password"
                                   show-password
                                   ref="passwordEl"
                                   @keyup.enter.native="doChangePassword"
                                   v-model="changePasswordForm.password" autocomplete="off"/>
                     </el-form-item>
-                    <el-form-item label="New Password" prop="newPassword">
+                    <el-form-item label="NewPassword" prop="newPassword">
                         <el-input type="password"
                                   show-password
                                   @keyup.enter.native="doChangePassword"
                                   v-model="changePasswordForm.newPassword" autocomplete="off"/>
                     </el-form-item>
-                    <el-form-item label="Confirmation Password" prop="reNewPassword">
+                    <el-form-item label="ConfirmPassword" prop="reNewPassword">
                         <el-input type="password"
                                   show-password
                                   @keyup.enter.native="doChangePassword"
